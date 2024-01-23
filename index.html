@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="styles.css">
     <style>
       body {
-        background-color: black;
+        background: linear-gradient(to bottom right, #000000, #333333);
+    /* Dodatkowe style */
         color: white;
         margin: 0;
         display: grid;
@@ -13,6 +14,8 @@
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
       }
+
+
 
       iframe {
         width: 100%;
@@ -22,6 +25,9 @@
         min-width: 0; /* Resetuje minimalną szerokość */
         min-height: 0; /* Resetuje minimalną wysokość */
         border: none; /* Usunięcie obramowania dla lepszego wyglądu */
+  border: 2px solid white; /* Przykładowy styl ramki */
+    border-radius: 8px; /* Zaokrąglony rogów */
+    overflow: hidden; /* Ukryj ewentualne zawijanie treści */
       }
     </style>
   </head>
