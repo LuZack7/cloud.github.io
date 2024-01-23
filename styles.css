@@ -1,0 +1,30 @@
+/* styles.css */
+
+body {
+    background-image: url('sciezka/do/twojego/obrazu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.czarne-tlo {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Responsywność dla ekranów o szerokości do 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .czarne-tlo {
+        padding: 10px;
+    }
+}
