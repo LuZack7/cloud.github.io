@@ -6,7 +6,6 @@
     <style>
       body {
         background: linear-gradient(to bottom right, #000000, #333333);
-    /* Dodatkowe style */
         color: white;
         margin: 0;
         display: grid;
@@ -15,20 +14,17 @@
         gap: 10px;
       }
 
-
-
       iframe {
         width: 100%;
         height: 100%;
         max-width: 100%;
         max-height: 100%;
-        min-width: 0; /* Resetuje minimalną szerokość */
-        min-height: 0; /* Resetuje minimalną wysokość */
-        border: none; /* Usunięcie obramowania dla lepszego wyglądu */
-        border: 2px solid black; /* Przykładowy styl ramki */
-        border-radius: 8px; /* Zaokrąglony rogów */
+        min-width: 0;
+        min-height: 0;
+        border: none;
+        border: 2px solid black;
+        border-radius: 8px;
         overflow: hidden;
-
       }
     </style>
   </head>
@@ -37,5 +33,19 @@
     <iframe src="https://264432.callswitchone.com/wallboard/opt-2---msp" scrolling="no"></iframe>
     <iframe src="https://264432.callswitchone.com/wallboard/opt-3---customer-support" scrolling="no"></iframe>
     <iframe src="https://264432.callswitchone.com/wallboard/opt-4---billing-and-accounts" scrolling="no"></iframe>
+
+    <script>
+      window.onload = function() {
+        var iframes = document.querySelectorAll('iframe');
+        iframes.forEach(function(iframe) {
+          // Spróbuj ukryć paski przewijania wewnątrz iframe
+          try {
+            iframe.contentWindow.document.body.style.overflow = 'hidden';
+          } catch (error) {
+            console.error('Błąd podczas próby ukrycia pasków przewijania:', error);
+          }
+        });
+      };
+    </script>
   </body>
 </html>
