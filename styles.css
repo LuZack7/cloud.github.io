@@ -1,3 +1,11 @@
+
+#cit-iframe iframe {
+height: 900px;
+width: 100%;
+margin: 0;
+padding: 0;
+border: none;
+}
 /* Dodatkowe style dla iframe */
 iframe {
   /* ... (istniejące style) */
