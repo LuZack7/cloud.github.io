@@ -1,32 +1,28 @@
-
-#cit-iframe iframe {
-height: 900px;
-width: 100%;
-margin: 0;
-padding: 0;
-border: none;
-}
-/* Dodatkowe style dla iframe */
-iframe {
-  /* ... (istniejące style) */
-height: 900px;
-width: 100%;
-margin: 0;
-padding: 0;
-border: none;
-  /* Dodatkowe style */
-  margin-bottom: 20px; /* Dodatkowy margines na dole każdego iframe */
-  background-color: rgba(255, 255, 255, 0.1); /* Przezroczyste tło iframe */
+/* Resetowanie stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Styl dla linków w ciele strony */
-body a {
-  color: #ffcc00; /* Kolor linków */
-  text-decoration: none; /* Usunięcie podkreślenia */
-  font-weight: bold; /* Pogrubienie tekstu linków */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
-/* Styl dla nagłówka h1 */
-h1 {
-  font-size: 24px; /* Rozmiar czcionki nagłówka h1 */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
