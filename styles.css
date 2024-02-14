@@ -1,28 +1,39 @@
-/* Resetowanie stylów */
-* {
+body {
+    background-color: black;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100vh;
 }
 
-.iframe-container {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
-    margin-bottom: 20px;
+.iframe-wrapper {
+    flex: 1;
+    margin: 10px;
     overflow: hidden;
+    border-radius: 20px; /* Zaokrąglenie ramki */
+    border: 4px solid #555; /* Obramowanie ramki */
 }
 
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+.iframe-wrapper iframe {
+    width: calc(100% + 32px); /* uwzględniamy wycięcie prawej krawędzi */
+    height: calc(120%); /* zmniejszamy wysokość o 20px */
+    margin-top: -70px; /* przesuwamy iframe w górę o 10px */
+    border-radius: 16px; /* Zaokrąglenie ramki */
+    border: 2px solid transparent; /* Usunięcie domyślnego obramowania */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Cień */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .iframe-wrapper {
+        margin: 10px 0;
+    }
 }
