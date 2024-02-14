@@ -20,7 +20,7 @@ body {
 }
 
 .iframe-wrapper iframe {
-    width: calc(100% + 32px); /* uwzględniamy wycięcie prawej krawędzi */
+    width: calc(100% + 35px); /* uwzględniamy wycięcie prawej krawędzi */
     height: calc(120%); /* zmniejszamy wysokość o 20px */
     margin-top: -70px; /* przesuwamy iframe w górę o 10px */
     border-radius: 16px; /* Zaokrąglenie ramki */
