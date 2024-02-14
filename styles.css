@@ -22,7 +22,7 @@ body {
 .iframe-wrapper iframe {
     width: calc(100% + 41px); /* uwzględniamy wycięcie prawej krawędzi */
     height: calc(120%); /* zmniejszamy wysokość o 20px */
-    margin-top: -70px; /* przesuwamy iframe w górę o 10px */
+    margin-top: -20px; /* przesuwamy iframe w górę o 10px */
     border-radius: 16px; /* Zaokrąglenie ramki */
     border: 2px solid transparent; /* Usunięcie domyślnego obramowania */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Cień */
